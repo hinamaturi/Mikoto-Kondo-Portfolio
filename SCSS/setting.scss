@@ -1,0 +1,39 @@
+$main-color:#C8BBB0;
+$base-color:#FFFBF1;
+$accent-color:#A08679;
+
+
+@mixin width1200() {
+  width: 1200px;
+  margin: 0 auto;
+}
+@mixin width1000() {
+  width: 1000px;
+  margin: 0 auto;
+}
+@mixin row() {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@mixin h2 {
+  font-size: 60px;
+  color: #80695e;  
+}
+@mixin h2-jp {
+  font-size: 18px;
+  color: #80695e;
+}
+@mixin page {
+  width: 100vw;
+  height: 100vh;
+}
+@mixin form{
+  font-size: 20px;
+  width: 500px;
+  height: 40px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid $accent-color;
+  background-color: rgba(255,255,255,0.3);
+}

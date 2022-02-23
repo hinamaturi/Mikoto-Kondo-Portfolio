@@ -1,0 +1,184 @@
+@media screen and (max-width:480px) { 
+ 
+  //-------------------------
+  //    全体構造
+  //-------------------------
+  body{
+    font-size: 15px;
+  }
+
+
+  //-------ファーストビュー------
+  .firstview{
+    h1{
+      font-size: 30px;
+    }
+  }
+  //-------------------------
+  //    キャッチ
+  //-------------------------
+
+  .catch{
+    width: auto;
+    .wrap-catch{
+      display: block;
+    }
+    .left{
+      h2{
+        font-size: 50px;
+        text-align: center;
+      }
+      p{
+        line-height: 25px;
+        font-size: 17px;
+        text-align: center;
+      }
+    } 
+    img{
+      width: 350px;
+      text-align: center;
+    }
+  }
+
+  //-------------------------
+  //    スキルページ
+  //-------------------------
+
+  .skill{
+    height: auto;
+    .caption{
+      margin: 70px auto 50px auto;
+    }
+    .wrap-skill{
+      width: auto;
+      margin-bottom: 50px;
+    }
+    section{
+      width: 180px;
+      height: 180px; 
+      margin: 0 auto 10px auto;
+      padding: 5px;
+      p{
+        line-height: 20px;
+      }
+    }
+    .leaf1,.leaf2{
+      display: none;
+    }
+  }
+
+
+  //-------------------------
+  //    ワークスページ
+  //-------------------------
+  .works{
+    height: auto;
+    .caption{
+      margin: 70px auto 50px auto;
+    }
+    .wrap-works{
+      width: auto;
+      display: block;
+    }
+    .box{
+      img{
+        width: 350px;
+      }
+      h5{
+        margin-bottom: 20px;
+      } 
+      .buttun{
+        margin-bottom: 40px;
+      } 
+    }
+  }
+
+
+
+
+  //-------------------------
+  //      プロフィールページ
+  //-------------------------
+  .profile{
+    .caption{
+      margin: 70px auto 50px auto;
+    }
+    .wrap-profile{
+      width: auto;
+      display: block;
+      text-align: center;
+      margin-bottom: 50px;
+      .me{
+        width: 300px;
+      }
+      .right{
+        margin:20px 10px;
+        text-align: left;
+      } 
+    }
+    .photo{
+      display: none;
+    }
+    .backpack{
+    display: none;
+    }
+  }
+
+  //-------------------------
+  //      コンタクトページ
+  //-------------------------
+  .contact{
+    .caption{
+      margin: 70px auto 50px auto;
+    }
+  .wrap-contact{
+    width: 350px;
+    }
+    img{
+      width: 180px;
+      top: 20px;
+      right: 0;
+    }
+    form{
+      input{
+        font-size: 17px;
+        width: 350px;
+      }
+      textarea{
+        width: 350px;
+        height: 200px;
+      }
+    }
+  }
+
+  //-------------------------
+  //    制作紹介ページ
+  //-------------------------
+  #coffeehouse,#pangea,#tatsuyakondo{
+    header{
+      margin-bottom: 50px;
+    }
+    main{
+      width: 0 auto;
+      .pc-image{
+        width: auto;
+        img{
+          width: 360px;
+          margin-bottom: 30px;
+        }
+      }
+      section{
+        width: auto;
+      }
+      .capture{
+        width: auto;
+        text-align: center;
+        display: block;
+        img{
+          width: auto;
+        }
+      }
+    }
+  }
+
+}

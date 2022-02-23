@@ -1,0 +1,415 @@
+@import 'setting.scss' ;
+
+//-------------------------
+//    全体構造
+//-------------------------
+
+body {
+  background-color: $base-color;
+  color: #505050;
+  font-size: 16px;
+  font-family: 'Allura','游明朝','ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', 'YuMincho','MS P明朝', 'MS PMincho', serif;
+  overflow-x: hidden;
+}
+
+main{
+  h2{
+    @include h2;
+  }
+  .caption{
+    text-align: center;
+    p{
+      font-size: 18px;
+    }
+  }
+}
+
+
+//-------------------------
+//    ヘッダー
+//-------------------------
+#home header{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding: 2% 5%;
+}
+#coffeehouse,#pangea,#tatsuyakondo{
+  header{
+    padding: 2% 5%;
+  }
+}
+// --------ハンバーガー------------
+/* メニューボタン */
+.hamburger-button {
+  background-color: rgba(255,255,255,0.3);
+}
+/* アイコン */
+.hamburger-button path {
+  fill: $accent-color;
+}
+.hamburger-button svg {}
+
+/* ナビゲーション */
+.hamburger-nav {
+  background-color: #e9e2d5;
+  height:50vh ;
+  ul{
+    margin: 5% 0 0 5%;
+  }
+  li{
+    margin-bottom: 20px;
+  }
+  a{
+    color: $accent-color;
+    text-decoration: none;
+    border-bottom: 0.5px solid $accent-color;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+}
+
+
+
+//-------------------------
+//    フッター
+//-------------------------
+footer{
+  background-color:$main-color;
+  height: 40px;
+  p{
+  line-height: 40px;
+  margin-left: 30px;
+  }
+}
+
+
+//-------------------------
+//    ファーストビュー
+//-------------------------
+.firstview{
+  img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 130px;
+  }
+  h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #80695e;
+  }
+}
+
+
+
+//-------------------------
+//    キャッチ
+//-------------------------
+.catch{
+  @include width1000;
+  margin-bottom: 130px;
+  .wrap-catch{
+    @include row;
+  }
+  .left{
+    h2{
+      color: $accent-color;
+      margin-bottom: 50px;
+    }
+    p{
+      line-height: 25px;
+      font-size: 17px;
+      text-align: center;
+    }
+  } 
+}
+
+
+//-------------------------
+//    スキル
+//-------------------------
+.skill{
+  @include page;
+  background-color: $main-color;
+  overflow: hidden;
+  position: relative;
+    .caption{
+      margin: 100px auto 80px auto;
+    }
+    .wrap-skill{
+      @include width1000;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    section{
+      // ----------レスポンシブはwidth縮める------------
+      width: 200px;
+      height: 200px; background-color: rgba(255,255,255,0.7);
+      margin: 2%;
+      padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      border: 1px solid $base-color;
+      z-index: 1;
+      h3{
+        font-size: 20px;
+        color: $accent-color;
+      }
+      .space{
+        letter-spacing: -0.2em;
+      }
+      h4{
+        font-family: Allura ;
+        font-size: 70px;
+        text-align: right;
+        opacity: 30%;
+        margin-top: -15px;
+      }
+      p{
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    .leaf1{
+      position: absolute;
+      top: 3%;
+      left: -5%;
+    }
+    .leaf2{
+      position: absolute;
+      bottom: -3%;
+      right: -3%;
+    }
+}
+
+
+//-------------------------
+//    ワークス
+//-------------------------
+.works{
+  @include page;
+  overflow: hidden;
+  .caption{
+    margin: 100px auto 80px  auto;
+  }
+  .wrap-works{
+    @include width1200;
+    @include row;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .box{
+    text-align: center;
+   h5{
+     font-size: 23px;
+     margin:20px 0 50px 0;
+     line-height: 30px;
+     p{
+       font-size: 17px;
+     }
+   } 
+   .buttun{
+    width:140px ;
+    height: 50px;
+    margin: 0 auto;
+    border: 2px solid $accent-color;
+   }  
+   a{
+     text-decoration: none;
+     color: $accent-color;
+     line-height: 50px;
+   }
+  }
+}
+
+//-------------------------
+//    プロフィール
+//-------------------------
+.profile{
+  overflow: hidden;
+  background-color: $accent-color;
+  color: #fff;
+  position: relative;
+  .caption{
+    margin: 100px auto 80px  auto;
+    h2{
+    color: #fff;
+    }
+  }
+  .wrap-profile{
+    @include width1000;
+    @include row;
+    margin-bottom: 120px;
+  }
+  .right{
+    margin-left: 80px;
+    p{
+      line-height: 23px;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+      font-family: 'Times New Roman', Times, serif;
+      border-bottom: 2px dotted #fff
+    }
+  }
+  .photo{
+    @include width1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 150px;
+  }
+  .top-image{
+    margin-bottom: 80px;
+  }
+  .backpack{
+    position: absolute;
+    right: 7%;
+    bottom: 20px;
+  }
+}
+
+
+
+//-------------------------
+//    コンタクト
+//-------------------------
+.contact{
+  overflow: hidden;
+  background-color: $main-color;
+  position: relative;
+  padding-bottom: 70px;
+  background-image: url(../images/bg-image1.png);
+  background-position:center ;
+  background-size: cover;
+  .caption{
+    margin: 100px auto 80px  auto;
+  }
+  .wrap-contact{
+    width: 500px;
+    margin: 0 auto;
+    p{
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+  img{
+    position: absolute;
+    top: 80px;
+    right: 10%;;
+  }
+  form{
+    label{
+    font-size: 20px; 
+    }
+    input{
+      @include form;
+      margin-bottom: 25px;
+    }
+    textarea{
+      @include form;
+      height: 250px;
+      margin-bottom: 50px; 
+    }
+    button{
+      width: 200px;
+      padding: 10px;
+      font-size: 20px;
+      background-color: $base-color;
+      border: none;
+      color: $accent-color;
+      font-family:游明朝 ;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .leaf3{
+    position: absolute;
+    top: 45%;
+    right: 0;
+  }
+}
+//-------------------------
+//    トップへ戻るボタン
+//-------------------------
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  background-color:rgba(255,255,255,0.3);
+  color: $accent-color;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+#page_top a:hover {
+  background-color: rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+//-------------------------
+//    制作紹介ページ
+//-------------------------
+#coffeehouse,#pangea,#tatsuyakondo{
+  main{
+    font-family: 'Times New Roman', Times, serif;
+    .pc-image{
+      text-align: center;
+      margin-bottom: 50px;
+      h1{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px auto 30px auto;
+        color: #80695e;
+      }
+      .buttun_git{
+        width: 250px;
+        height: 40px;
+        margin-bottom: 40px;
+        border: 1px solid $accent-color;
+        margin: 0 auto 20px auto;
+        :hover{
+          background-color: $accent-color;
+          color: #fff;
+        }
+      }
+      a{
+        color: #505050;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        line-height: 40px;
+      }
+    }
+    section{
+      width: 800px;
+      margin: 0 auto 100px auto;
+      background-color: #e9e2d5;
+      padding: 20px;
+      .inner{
+        border: 1px solid $base-color;
+        padding: 20px;
+      }
+      h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: #80695e;
+      }
+      p{
+        line-height: 25px;
+        margin-bottom: 30px;
+      }
+    }
+    .capture{
+    @include width1200;
+    @include row;
+    margin-bottom: 100px;
+    }
+  }
+}
+

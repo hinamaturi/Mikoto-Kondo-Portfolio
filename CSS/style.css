@@ -1,0 +1,481 @@
+@charset "UTF-8";
+body {
+  background-color: #FFFBF1;
+  color: #505050;
+  font-size: 16px;
+  font-family: 'Allura','游明朝','ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', 'YuMincho','MS P明朝', 'MS PMincho', serif;
+  overflow-x: hidden;
+}
+
+main h2 {
+  font-size: 60px;
+  color: #80695e;
+}
+
+main .caption {
+  text-align: center;
+}
+
+main .caption p {
+  font-size: 18px;
+}
+
+#home header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding: 2% 5%;
+}
+
+#coffeehouse header, #pangea header, #tatsuyakondo header {
+  padding: 2% 5%;
+}
+
+/* メニューボタン */
+.hamburger-button {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* アイコン */
+.hamburger-button path {
+  fill: #A08679;
+}
+
+/* ナビゲーション */
+.hamburger-nav {
+  background-color: #e9e2d5;
+  height: 50vh;
+}
+
+.hamburger-nav ul {
+  margin: 5% 0 0 5%;
+}
+
+.hamburger-nav li {
+  margin-bottom: 20px;
+}
+
+.hamburger-nav a {
+  color: #A08679;
+  text-decoration: none;
+  border-bottom: 0.5px solid #A08679;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+footer {
+  background-color: #C8BBB0;
+  height: 40px;
+}
+
+footer p {
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.firstview img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.firstview h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #80695e;
+}
+
+.catch {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.catch .wrap-catch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.catch .left h2 {
+  color: #A08679;
+  margin-bottom: 50px;
+}
+
+.catch .left p {
+  line-height: 25px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.skill {
+  width: 100vw;
+  height: 100vh;
+  background-color: #C8BBB0;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill .caption {
+  margin: 100px auto 80px auto;
+}
+
+.skill .wrap-skill {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill section {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 2%;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid #FFFBF1;
+  z-index: 1;
+}
+
+.skill section h3 {
+  font-size: 20px;
+  color: #A08679;
+}
+
+.skill section .space {
+  letter-spacing: -0.2em;
+}
+
+.skill section h4 {
+  font-family: Allura;
+  font-size: 70px;
+  text-align: right;
+  opacity: 30%;
+  margin-top: -15px;
+}
+
+.skill section p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.skill .leaf1 {
+  position: absolute;
+  top: 3%;
+  left: -5%;
+}
+
+.skill .leaf2 {
+  position: absolute;
+  bottom: -3%;
+  right: -3%;
+}
+
+.works {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.works .caption {
+  margin: 100px auto 80px  auto;
+}
+
+.works .wrap-works {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.works .box {
+  text-align: center;
+}
+
+.works .box h5 {
+  font-size: 23px;
+  margin: 20px 0 50px 0;
+  line-height: 30px;
+}
+
+.works .box h5 p {
+  font-size: 17px;
+}
+
+.works .box .buttun {
+  width: 140px;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid #A08679;
+}
+
+.works .box a {
+  text-decoration: none;
+  color: #A08679;
+  line-height: 50px;
+}
+
+.profile {
+  overflow: hidden;
+  background-color: #A08679;
+  color: #fff;
+  position: relative;
+}
+
+.profile .caption {
+  margin: 100px auto 80px  auto;
+}
+
+.profile .caption h2 {
+  color: #fff;
+}
+
+.profile .wrap-profile {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 120px;
+}
+
+.profile .right {
+  margin-left: 80px;
+}
+
+.profile .right p {
+  line-height: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 2px dotted #fff;
+}
+
+.profile .photo {
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 150px;
+}
+
+.profile .top-image {
+  margin-bottom: 80px;
+}
+
+.profile .backpack {
+  position: absolute;
+  right: 7%;
+  bottom: 20px;
+}
+
+.contact {
+  overflow: hidden;
+  background-color: #C8BBB0;
+  position: relative;
+  padding-bottom: 70px;
+  background-image: url(../images/bg-image1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .caption {
+  margin: 100px auto 80px  auto;
+}
+
+.contact .wrap-contact {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contact .wrap-contact p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact img {
+  position: absolute;
+  top: 80px;
+  right: 10%;
+}
+
+.contact form label {
+  font-size: 20px;
+}
+
+.contact form input {
+  font-size: 20px;
+  width: 500px;
+  height: 40px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #A08679;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 25px;
+}
+
+.contact form textarea {
+  font-size: 20px;
+  width: 500px;
+  height: 40px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #A08679;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.contact form button {
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #FFFBF1;
+  border: none;
+  color: #A08679;
+  font-family: 游明朝;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact .leaf3 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+#page_top a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #A08679;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+
+#page_top a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+#coffeehouse main, #pangea main, #tatsuyakondo main {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#coffeehouse main .pc-image, #pangea main .pc-image, #tatsuyakondo main .pc-image {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#coffeehouse main .pc-image h1, #pangea main .pc-image h1, #tatsuyakondo main .pc-image h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto 30px auto;
+  color: #80695e;
+}
+
+#coffeehouse main .pc-image .buttun_git, #pangea main .pc-image .buttun_git, #tatsuyakondo main .pc-image .buttun_git {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #A08679;
+  margin: 0 auto 20px auto;
+}
+
+#coffeehouse main .pc-image .buttun_git :hover, #pangea main .pc-image .buttun_git :hover, #tatsuyakondo main .pc-image .buttun_git :hover {
+  background-color: #A08679;
+  color: #fff;
+}
+
+#coffeehouse main .pc-image a, #pangea main .pc-image a, #tatsuyakondo main .pc-image a {
+  color: #505050;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+#coffeehouse main section, #pangea main section, #tatsuyakondo main section {
+  width: 800px;
+  margin: 0 auto 100px auto;
+  background-color: #e9e2d5;
+  padding: 20px;
+}
+
+#coffeehouse main section .inner, #pangea main section .inner, #tatsuyakondo main section .inner {
+  border: 1px solid #FFFBF1;
+  padding: 20px;
+}
+
+#coffeehouse main section h2, #pangea main section h2, #tatsuyakondo main section h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #80695e;
+}
+
+#coffeehouse main section p, #pangea main section p, #tatsuyakondo main section p {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+#coffeehouse main .capture, #pangea main .capture, #tatsuyakondo main .capture {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=style.css.map */

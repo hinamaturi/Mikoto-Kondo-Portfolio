@@ -1,0 +1,134 @@
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+  .firstview h1 {
+    font-size: 30px;
+  }
+  .catch {
+    width: auto;
+  }
+  .catch .wrap-catch {
+    display: block;
+  }
+  .catch .left h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .catch .left p {
+    line-height: 25px;
+    font-size: 17px;
+    text-align: center;
+  }
+  .catch img {
+    width: 350px;
+    text-align: center;
+  }
+  .skill {
+    height: auto;
+  }
+  .skill .caption {
+    margin: 70px auto 50px auto;
+  }
+  .skill .wrap-skill {
+    width: auto;
+    margin-bottom: 50px;
+  }
+  .skill section {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 10px auto;
+    padding: 5px;
+  }
+  .skill section p {
+    line-height: 20px;
+  }
+  .skill .leaf1, .skill .leaf2 {
+    display: none;
+  }
+  .works {
+    height: auto;
+  }
+  .works .caption {
+    margin: 70px auto 50px auto;
+  }
+  .works .wrap-works {
+    width: auto;
+    display: block;
+  }
+  .works .box img {
+    width: 350px;
+  }
+  .works .box h5 {
+    margin-bottom: 20px;
+  }
+  .works .box .buttun {
+    margin-bottom: 40px;
+  }
+  .profile .caption {
+    margin: 70px auto 50px auto;
+  }
+  .profile .wrap-profile {
+    width: auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .profile .wrap-profile .me {
+    width: 300px;
+  }
+  .profile .wrap-profile .right {
+    margin: 20px 10px;
+    text-align: left;
+  }
+  .profile .photo {
+    display: none;
+  }
+  .profile .backpack {
+    display: none;
+  }
+  .contact .caption {
+    margin: 70px auto 50px auto;
+  }
+  .contact .wrap-contact {
+    width: 350px;
+  }
+  .contact img {
+    width: 180px;
+    top: 20px;
+    right: 0;
+  }
+  .contact form input {
+    font-size: 17px;
+    width: 350px;
+  }
+  .contact form textarea {
+    width: 350px;
+    height: 200px;
+  }
+  #coffeehouse header, #pangea header, #tatsuyakondo header {
+    margin-bottom: 50px;
+  }
+  #coffeehouse main, #pangea main, #tatsuyakondo main {
+    width: 0 auto;
+  }
+  #coffeehouse main .pc-image, #pangea main .pc-image, #tatsuyakondo main .pc-image {
+    width: auto;
+  }
+  #coffeehouse main .pc-image img, #pangea main .pc-image img, #tatsuyakondo main .pc-image img {
+    width: 360px;
+    margin-bottom: 30px;
+  }
+  #coffeehouse main section, #pangea main section, #tatsuyakondo main section {
+    width: auto;
+  }
+  #coffeehouse main .capture, #pangea main .capture, #tatsuyakondo main .capture {
+    width: auto;
+    text-align: center;
+    display: block;
+  }
+  #coffeehouse main .capture img, #pangea main .capture img, #tatsuyakondo main .capture img {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
