@@ -385,7 +385,19 @@ footer p {
 }
 
 #thanks header {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+}
+
+#thanks main {
+  margin-bottom: 200px;
+}
+
+#thanks section {
+  width: 0 auto;
+}
+
+#thanks section p {
+  font-size: 20px;
 }
 
 #page_top {

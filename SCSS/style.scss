@@ -338,10 +338,16 @@ footer{
 //-------------------------
 #thanks{
   header{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+  }
+  main{
+    margin-bottom: 200px;
   }
   section{
-
+    width: 0 auto;
+    p{
+      font-size: 20px;
+    }
   }
 }
 
